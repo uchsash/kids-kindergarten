@@ -1,0 +1,188 @@
+/* Quicksand Font Link */
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+
+/* Global CSS */
+
+/* Font */
+.quicksand-regular {
+    font-family: "Quicksand", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.full-body{
+    background-color: #F7F7F7;
+    max-width: fit-content;
+    margin: 0 auto;
+}
+
+.btn-primary{
+    color: #ffffff;
+    background-color: #111111;
+    font-size: 1.25rem;
+    font-weight: 700;
+    padding: 20px;
+    max-width: 200px;
+    border-radius: 12px;
+    border: none;
+}
+
+.nav-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.nav-logo{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.nav-logo p{
+    text-transform: uppercase;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.main-menu ul{
+    display: flex;
+    gap: 32px;
+}
+
+.main-menu ul li{
+    list-style: none;
+}
+
+.main-menu ul a{
+    text-decoration: none;
+    font-size: 1.25rem;
+    line-height: 1.8rem;
+    font-weight: 700;
+}
+
+#m1{
+    color: #FEA301;
+}
+
+#m2{
+    color: #01ACFD;
+}
+#m3{
+    color: #05D4DF;
+}
+#m4{
+    color: #5D58EF;
+}
+
+.nav-container i{
+    display: none;
+}
+
+.total-nav hr{
+    display: none;
+}
+
+.btn-nav{
+    background-color: #FEA301;
+    width: 190px;
+    padding: 15px 10px;
+    font-weight: 600;
+}
+
+/* banner css */
+.banner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+.banner-content{
+    max-width: fit-content;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+.banner-content h1{
+    font-size: 3.5rem;
+    line-height: 3.8rem;
+    font-weight: 700;
+}
+
+.banner-content p{
+    font-size: 1.25rem;
+    line-height: 1.5rem;
+}
+
+#empower{
+    color: #FEA301;
+}
+#students{
+    color: #111111;
+}
+#towards{
+    color: #01ACFD;
+
+}
+
+.banner-image{
+    max-width: 310px;
+}
+
+/* Responsive Media Query */
+@media screen and (max-width: 576px) {
+
+    .banner{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        
+    }
+
+    .banner-content{
+        justify-content: center;
+        align-items: center;
+        margin-left: 20px;
+        margin-right: 20px;
+        gap: 15px;
+    }
+
+    .banner-content h1{
+        font-size: 2.2rem;
+        line-height: 2.6rem;
+    }
+    
+    .banner-content p{
+        margin: 18px 0px;
+        font-size: 1rem;
+        line-height: 1.2rem;
+    }
+
+    .banner-content br{
+        display: none;
+    }
+
+    .btn-primary{
+        padding: 20px 30px;
+    }
+
+    .main-menu, .btn-nav, .nav-logo p{
+        display: none;
+    }
+
+
+   .nav-container i{
+        display: contents;
+    }
+    
+.total-nav{
+        border-bottom: 2px solid #FEA301;
+}
