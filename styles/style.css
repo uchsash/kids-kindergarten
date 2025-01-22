@@ -1,5 +1,6 @@
-/* Quicksand Font Link */
+/* Font Link */
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
 
 /* Global CSS */
 
@@ -10,6 +11,13 @@
     font-weight: 400;
     font-style: normal;
 }
+
+.raleway-regular {
+    font-family: "Raleway", serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+  }
 
 *{
     margin: 0;
@@ -22,6 +30,8 @@
     margin: 0 auto;
 }
 
+/* PRIMARY BUTTON */
+
 .btn-primary{
     color: #ffffff;
     background-color: #111111;
@@ -33,6 +43,7 @@
     border: none;
 }
 
+/* MAIN NAV */
 .nav-container{
     display: flex;
     align-items: center;
@@ -52,6 +63,7 @@
     font-weight: 700;
 }
 
+/* MAIN MENU */
 .main-menu ul{
     display: flex;
     gap: 32px;
@@ -82,11 +94,9 @@
     color: #5D58EF;
 }
 
-.nav-container i{
-    display: none;
-}
+/* CONTACT and ICON */
 
-.total-nav hr{
+.nav-container i{
     display: none;
 }
 
@@ -97,12 +107,27 @@
     font-weight: 600;
 }
 
-/* banner css */
+/* HEADER CSS */
+h2{
+    color: #000;
+    font-size: 2.8rem;
+    font-weight: 700;
+    line-height: 3.6rem;
+}
+
+h3{
+    color: #202020;
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 1.8rem;
+}
+
+/* BANNER CSS */
 .banner{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 50px;
+    gap: 100px;
 }
 .banner-content{
     max-width: fit-content;
@@ -136,9 +161,107 @@
     max-width: 310px;
 }
 
+/* CURRICULUM CSS */
+.curriculum-container{
+    margin: 60px 0;
+    text-align: center;
+    background-image: url(../assets/bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.curriculum-container h2{
+    margin-bottom: 80px;
+}
+
+.cards-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+#c1{
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid #DEF5FF;
+    box-shadow: inset 0px 0px 28.3px 1px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg, #DEF5FF,rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+#c2{
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid rgb(255, 244, 220);
+    box-shadow: inset 0px 0px 28.3px 1px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+#c3{
+    box-sizing: border-box;
+    border-radius: 20px;
+    border: 1px solid rgb(242, 232, 255);
+    box-shadow: inset 0px 0px 28.3px 1px rgba(0, 0, 0, 0.05);
+    background: linear-gradient(180deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+.card-inside{
+    margin: 55px 20px 55px 20px;
+}
+
+.card-inside h3{
+    margin-top: 33px;
+}
+
+.card-inside p{
+    color: rgb(128, 128, 128);
+    font-family: Raleway;
+    font-size: 1rem;
+    font-weight: 500;
+    line-height: 1.6rem;
+    margin: 33px 0;
+}
+
+.arrows{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+    margin-top: 80px;
+}
+
+.arrows i{
+    background-color: #FEA301;
+    border-radius: 30px;
+    border: none;
+    width: 50px;
+    height: 50px;
+    color: #fff;
+    font-size: 30px;
+    line-height: 50px;
+    font-weight: 900;
+    text-align: center;
+}
+
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
+    h2{
+        font-size: 1.8rem;
+        line-height: 3rem;
+    }
+    
+    h3{
+        font-size: 1.2rem;
+        line-height: 1.4rem;
+    }
+    /* RESPONSIVE PRIMARY BUTTON */
+    .btn-primary{
+        padding: 20px 30px;
+    }
 
+    /* RESPONSIVE BANNER */
     .banner{
         flex-direction: column-reverse;
         justify-content: center;
@@ -170,14 +293,11 @@
         display: none;
     }
 
-    .btn-primary{
-        padding: 20px 30px;
-    }
+    /* RESPONSIVE MAIN MENU */
 
     .main-menu, .btn-nav, .nav-logo p{
         display: none;
     }
-
 
    .nav-container i{
         display: contents;
@@ -185,4 +305,29 @@
     
 .total-nav{
         border-bottom: 2px solid #FEA301;
+}
+
+/* Background need to be shown */
+.curriculum-container{
+    padding-bottom: 40px;
+    /* background-position: top;
+    background-repeat: repeat; */
+}
+
+.cards-container{
+    flex-direction: column;
+    gap: 25px;
+}
+.card-inside{
+    margin: 55px 50px;
+}
+
+.card-inside p{
+    font-size: .5rem;
+    line-height: 1rem;
+}
+.arrows{
+    display: none;
+}
+
 }
