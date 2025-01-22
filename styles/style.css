@@ -26,15 +26,17 @@
 
 .full-body{
     background-color: #F7F7F7;
-    max-width: fit-content;
+    max-width: 1250px;
     margin: 0 auto;
 }
 
 /* PRIMARY BUTTON */
 
 .btn-primary{
+    cursor: pointer;
     color: #ffffff;
     background-color: #111111;
+    font-family: "Quicksand", serif;
     font-size: 1.25rem;
     font-weight: 700;
     padding: 20px;
@@ -48,7 +50,10 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin: 20px 0;
+    margin: 30px 50px 50px 50px;
+    /* max-width: 80%; */
+    text-align: center;
+    /* border: 2px solid blue; */
 }
 
 .nav-logo{
@@ -66,7 +71,7 @@
 /* MAIN MENU */
 .main-menu ul{
     display: flex;
-    gap: 32px;
+    gap: 30px;
 }
 
 .main-menu ul li{
@@ -107,6 +112,16 @@
     font-weight: 600;
 }
 
+/* .total-nav{
+    margin: 0 auto;
+    text-align: center;
+    border: 2px solid salmon;
+    display: flex;
+    justify-content: center;
+    gap: 150px;
+
+} */
+
 /* HEADER CSS */
 h2{
     color: #000;
@@ -127,7 +142,7 @@ h3{
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 100px;
+    gap: 80px;
 }
 .banner-content{
     max-width: fit-content;
@@ -162,14 +177,20 @@ h3{
 }
 
 /* CURRICULUM CSS */
-.curriculum-container{
-    margin: 60px 0;
-    text-align: center;
+
+.total-curriculum{
+    display: flex;
+    justify-content: center;
     background-image: url(../assets/bg.png);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+}
 
+.curriculum-container{
+    margin: 60px 0;
+    text-align: center;
+    max-width: 90%;
 }
 
 .curriculum-container h2{
@@ -190,12 +211,22 @@ h3{
     background: linear-gradient(180deg, #DEF5FF,rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
 
+#c1 a{
+    text-decoration: none;
+    color: #64C8FF;
+}
+
 #c2{
     box-sizing: border-box;
     border-radius: 20px;
     border: 1px solid rgb(255, 244, 220);
     box-shadow: inset 0px 0px 28.3px 1px rgba(0, 0, 0, 0.05);
     background: linear-gradient(180deg, rgb(255, 244, 220),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
+}
+
+#c2 a{
+    text-decoration: none;
+    color: #F0AA00;
 }
 
 #c3{
@@ -206,8 +237,17 @@ h3{
     background: linear-gradient(180deg, rgb(238, 225, 255),rgba(255, 255, 255, 0) 40%),rgb(255, 255, 255);
 }
 
+#c3 a{
+    text-decoration: none;
+    color: #8700FF;
+}
+
 .card-inside{
     margin: 55px 20px 55px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: fit-content;
 }
 
 .card-inside h3{
@@ -221,6 +261,8 @@ h3{
     font-weight: 500;
     line-height: 1.6rem;
     margin: 33px 0;
+    width: 60%;
+    text-align: center;
 }
 
 .arrows{
@@ -244,6 +286,156 @@ h3{
     font-weight: 900;
     text-align: center;
 }
+
+/* STORIES CSS */
+.stories-container{
+    padding: 60px 0 60px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    align-items: center;
+    background: url(../assets/bg.png),linear-gradient(0.00deg, rgba(254, 163, 1, 0.3),rgba(255, 255, 255, 0.3) 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    width: 90%;
+}
+
+.box{
+    border-radius: 16px;
+    background-color: #fff;
+}
+.time-wrapper{
+    background-color: #95B226;
+    padding: 15px 25px;
+    border-radius: 50px;
+    width: fit-content;
+    margin-left: 20px;
+    margin-top: -40px;
+    position: relative;
+    font-family: Raleway;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    color: #fff;
+}
+
+.box h3{
+    line-height: 1.6rem;
+    margin: 50px 0 40px 0;
+}
+
+.box h4{
+    font-size: 1rem;
+    margin-top: 20px;
+    line-height: 1.6rem;
+}
+
+.box h3, .box p, .box h4{
+    margin-left: 20px;
+}
+
+.box p{
+    margin-bottom: 50px;
+}
+
+.box img{
+    width: 100%;
+    border-radius: 16px 16px 0 0;
+}
+
+#box-1{
+    grid-row: span 2;
+    grid-column: span 2;
+}
+
+#box-1 .time-wrapper{
+    background-color: #3CD8E8;
+}
+
+#box-3 .time-wrapper{
+    background-color: #5D58F0;
+}
+
+.btn-view{
+    padding: 15px 50px;
+}
+
+/* FOOTER CSS */
+.total-footer{
+    background-color: #01ACFD;
+    padding: 120px 0 250px 0;
+}
+
+.footer-container{
+    display: flex;
+    gap: 85px;
+    justify-content: center;
+    align-items: top;
+}
+
+.kids-edu-logo{
+    display: flex;
+    align-items: top;
+}
+
+.kids-edu-logo img{
+    height: 4.4rem;
+    margin-top: 0;
+}
+
+.kids-edu-logo h2{
+    color: #fff;
+    font-size: 2.625rem;
+    line-height: 2.2rem;
+    font-weight: 700;
+    margin-bottom: 35px;
+}
+
+.kids-info{
+    color: #fff;
+    font-weight: 400;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+}
+
+.footer-menu h3, .social h3{
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 1.9rem;
+    color: #fff;
+    margin-bottom: 29px;
+}
+
+.footer-menu li{
+    list-style: none;
+    margin-bottom: 20px;
+}
+
+.footer-menu a{
+    color: #fff;
+    font-weight: 500;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    text-decoration: none;
+}
+
+.social h3{
+    margin-bottom: 35px;
+}
+
+.social img{
+    width: 40px;
+    height: 40px;
+    margin-right: 15px;
+}
+
 
 /* Responsive Media Query */
 @media screen and (max-width: 576px) {
@@ -328,6 +520,68 @@ h3{
 }
 .arrows{
     display: none;
+}
+
+/* STORIES CSS */
+
+.stories-container{
+    max-width: 100%;
+    gap: 20px;
+}
+
+.box-container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    max-width: calc(90% - 15px);
+}
+
+.box h4, .time-wrapper{
+    font-size: .6rem;
+    line-height: .6rem;
+}
+
+.box h4{
+    line-height: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.box h4 br{
+    display: none;
+}
+
+.time-wrapper{
+    padding: 6px 10px;
+    margin-left: 10px;
+    margin-top: -20px;
+}
+
+#box-1{
+    display: none;
+}
+
+.total-footer{
+    border: 2px solid #fff;
+
+}
+
+/* FOOTER CSS */
+
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    gap: 50px;
+    max-width: 70%;
+    margin-left: 5%;
+    align-items: start;
+}
+
+.footer-container br{
+    display: none;
+}
+.kids-info{
+    text-wrap: wrap;
 }
 
 }

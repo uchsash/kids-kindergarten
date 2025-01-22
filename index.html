@@ -12,25 +12,27 @@
 <body class="full-body quicksand-regular">
     <header>
         <!-- NAV HTML -->
-        <nav class="total-nav">
-            <div class="nav-container">
-                <!-- NAV LOGO -->
-                <div class="nav-logo">
-                    <img src="assets/logo.png" alt="">
-                    <p>School</p>
+        <nav class="nav-fixed">
+            <div class="total-nav">
+                <div class="nav-container">
+                    <!-- NAV LOGO -->
+                    <div class="nav-logo">
+                        <img src="assets/logo.png" alt="">
+                        <p>School</p>
+                    </div>
+                    <!-- MAIN MENU -->
+                    <div class="main-menu">
+                        <ul>
+                            <li><a id="m1" href="">Home</a></li>
+                            <li><a id="m2" href="">About</a></li>
+                            <li><a id="m3" href="">Facilities</a></li>
+                            <li><a id="m4" href="">Admission</a></li>
+                        </ul>
+                    </div>
+                    <!-- CONTACT and HAMBURGER ICON -->
+                    <i class="fa-solid fa-bars"></i>
+                    <button class="btn-primary btn-nav">Contact</button>
                 </div>
-                <!-- MAIN MENU -->
-                <div class="main-menu">
-                    <ul>
-                        <li><a id="m1" href="">Home</a></li>
-                        <li><a id="m2" href="">About</a></li>
-                        <li><a id="m3" href="">Facilities</a></li>
-                        <li><a id="m4" href="">Admission</a></li>
-                    </ul>
-                </div>
-                <!-- CONTACT and HAMBURGER ICON -->
-                <i class="fa-solid fa-bars"></i>
-                <button class="btn-primary btn-nav">Contact</button>
             </div>
         </nav>
         <!-- BANNER HTML -->
@@ -46,14 +48,15 @@
     </header>
     <main>
         <!-- CURRICULUM HTML -->
-        <section class="curriculum-container">
-                <h2>Standard Curriculum</h2>
+        <section class="total-curriculum">
+                <div class="curriculum-container">
+                    <h2>Standard Curriculum</h2>
                 <div class="cards-container">
                     <div class="card" id="c1">
                         <div class="card-inside">
                             <img src="assets/kinder.png" alt="">
                         <h3>Kinder (3-6) Years</h3>
-                        <p>Cum sociis natoque penatibus et magnis <br> dis parturient montes, nascetur ridiculus <br> mu sdis parturient</p>
+                        <p>Our purpose is to help them play and learn through it to become independent. It's they're begining.</p>
                         <a href="">Read More</a>
                         </div>
                     </div>
@@ -61,7 +64,7 @@
                         <div class="card-inside">
                         <img src="assets/elementary.png" alt="">
                         <h3>Elementary School</h3>
-                        <p>Cum sociis natoque penatibus et magnis <br> dis parturient montes, nascetur ridiculus <br> mu sdis parturient</p>
+                        <p>Here, we inspire our students to become self-sufficient and try to create a better soceity.</p>
                         <a href="">Read More</a>
                         </div>
                     </div>
@@ -69,7 +72,7 @@
                        <div class="card-inside">
                         <img src="assets/middle.png" alt="">
                         <h3>Middle (10-16) Years</h3>
-                        <p>Cum sociis natoque penatibus et magnis <br> dis parturient montes, nascetur ridiculus <br> mu sdis parturient</p>
+                        <p>We don't teach students any textbook. We teach them how to learn and they are prepared for the next step. </p>
                         <a href="">Read More</a>
                        </div>
                     </div>
@@ -78,11 +81,72 @@
                     <i class="fa-solid fa-chevron-left"></i>
                     <i class="fa-solid fa-chevron-right"></i>
                 </div>
+                </div>
+        </section>
+        <section class="stories-container">
+            <h2>Our Stories</h2>
+            <div class="box-container">
+                <div class="box" id="box-1">
+                    <img src="assets/story-1.png" alt="">
+                    <div class="time-wrapper">
+                        <time datetime="2019-11-19">November 19, 2019</time>
+                    </div>
+                    <h3>A fun toddler coloring training on classroom</h3>
+                        <p>Beautiful branding for changes by Never Now in Australia. changes is a platform for open discussion in an inclusive and collaborative environment, providing the...</p>
+                </div>
+                <div class="box">
+                    <img src="assets/story-2.png" alt="">
+                    <div class="time-wrapper">
+                        <time datetime="2019-11-19">November 19, 2019</time>
+                    </div>
+                    <h4>Find out if a school fits the family’s needs</h4>
+                </div>
+                <div class="box" id="box-3">
+                    <img src="assets/story-3.png" alt="">
+                    <div class="time-wrapper"><time datetime="2019-11-19">November 19, 2019</time></div>
+                    <h4>Summer math & literacy <br> centres for kids</h4>
+                </div>
+                <div class="box">
+                    <img src="assets/story-4.png" alt="">
+                    <div class="time-wrapper"><time datetime="2019-09-10">September 10, 2019</time></div>
+                    <h4>Classroom management <br> techniques for new tutors</h4>
+                </div>
+                <div class="box">
+                    <img src="assets/story-5.png" alt="">
+                    <div class="time-wrapper"><time datetime="2019-07-19">July 19, 2019</time></div>
+                    <h4>Conversation rhymes <br> improve kids listening</h4>
+                </div>
+            </div>
+            <button class="btn-primary btn-view">View All</button>
         </section>
 
     </main>
-    <footer>
-
+    <footer class="total-footer">
+        <div class="footer-container">
+            <div class="kids-edu-info">
+                <div class="kids-edu-logo">
+                    <img src="assets/logo-footer.png" alt="">
+                    <h2>Kids <br> Education</h2>
+                </div>
+                <p class="kids-info">Students are our future wealth <br> and mighty. To give them proper education is our <br>responsibility. If the students are well taught, <br> they will be bring the nation prosperity.</p>
+            </div>
+            <div class="footer-menu">
+                <h3>About School</h3>
+                <ul>
+                    <li><a href="">Home</a></li>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Facilities</a></li>
+                    <li><a href="">Admission</a></li>
+                </ul>
+            </div>
+            <div class="social">
+                <h3>Keep In Touch</h3>
+                <img src="assets/fb.png" alt="">
+                <img src="assets/dribble.png" alt="">
+                <img src="assets/twitter.png" alt="">
+                <img src="assets/google+.png" alt="">
+            </div>
+        </div>
     </footer>
 </body>
 
