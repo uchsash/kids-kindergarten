@@ -122,6 +122,17 @@
 
 } */
 
+.mq-container{
+    display: flex;
+    justify-content: center;
+}
+
+.mq{
+    width: 80%;
+    direction: left;
+    height: 100px;
+}
+
 /* HEADER CSS */
 h2{
     color: #000;
@@ -285,6 +296,11 @@ h3{
     line-height: 50px;
     font-weight: 900;
     text-align: center;
+}
+
+.arrows i:hover{
+    background-color: #8700FF;
+    transition: 0.5ms;
 }
 
 /* STORIES CSS */
