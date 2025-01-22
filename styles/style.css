@@ -209,7 +209,8 @@ h3{
 }
 
 .cards-container{
-    display: flex;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
     justify-content: center;
     align-items: center;
     gap: 20px;
@@ -258,7 +259,10 @@ h3{
     display: flex;
     flex-direction: column;
     align-items: center;
-    max-width: fit-content;
+}
+
+.card-inside img{
+    height: 150px;
 }
 
 .card-inside h3{
@@ -272,7 +276,7 @@ h3{
     font-weight: 500;
     line-height: 1.6rem;
     margin: 33px 0;
-    width: 60%;
+    width: 70%;
     text-align: center;
 }
 
@@ -523,7 +527,7 @@ h3{
 }
 
 .cards-container{
-    flex-direction: column;
+    grid-template-columns: repeat(1, 1fr);
     gap: 25px;
 }
 .card-inside{
